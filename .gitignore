@@ -108,4 +108,6 @@ GOPR9633.mp4
 output.mp4
 
 # ignore folder
-tmpSuperSloMo/
+.tmpSuperSloMo/
+
+

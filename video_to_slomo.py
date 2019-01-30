@@ -76,7 +76,7 @@ def extract_frames(video, outDir):
 def create_video(dir):
     error = ""
     print('{} -r {} -i {}/%d.jpg -qscale:v 2 {}'.format(os.path.join(args.ffmpeg_dir, "ffmpeg"), args.fps, dir, args.output))
-    retn = os.system('{} -r {} -i {}/%d.jpg -crf 17 -vcodec libx264 {}'.format(os.path.join(args.ffmpeg_dir, "ffmpeg"), args.fps, dir, args.output))
+    retn = os.system('{} -r {} -i {}/%d.jpg -crf 17 {}'.format(os.path.join(args.ffmpeg_dir, "ffmpeg"), args.fps, dir, args.output))
     if retn:
         error = "Error creating output video. Exiting."
     return error
